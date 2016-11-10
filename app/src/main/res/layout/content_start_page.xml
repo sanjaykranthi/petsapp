@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_dashboard"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.petsapp.android.StartPageActivity"
+    tools:showIn="@layout/activity_start_page">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/name_text_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/imgA"
+                    android:background="@drawable/round_corner"
+                    android:hint="Pet Name "
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textColorHint="#262626"
+                    android:typeface="serif" />
+
+                <ImageView
+                    android:id="@+id/imgA"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/dogcat_spinnerId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/imgB"
+                    android:background="@drawable/spinner_arrow"
+                    android:entries="@array/Petcatagory"
+                    android:padding="8dp"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:id="@+id/imgB"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/breed_spinnerId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/imgC"
+                    android:background="@drawable/round_corner"
+                    android:ems="10"
+                    android:hint="Breed "
+                    android:padding="8dp"
+                    android:popupBackground="#000000"
+                    android:textColorHint="#262626"
+                    android:typeface="serif" />
+
+                <ImageView
+                    android:id="@+id/imgC"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/age_text_id"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/round_corner"
+                    android:hint="Age(Years)"
+                    android:inputType="number"
+                    android:padding="7dp"
+                    android:singleLine="true"
+                    android:textColorHint="#262626" />
+
+                <TextView
+                    android:id="@+id/txtAnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/age_text_id"
+                    android:padding="7dp"
+                    android:text="and"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#262626" />
+
+                <EditText
+                    android:id="@+id/ageMonth_text_id"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/imgD"
+                    android:layout_toRightOf="@+id/txtAnd"
+                    android:background="@drawable/round_corner"
+                    android:hint="Age(Months)"
+                    android:inputType="number"
+                    android:padding="7dp"
+                    android:singleLine="true"
+                    android:textColorHint="#262626" />
+
+                <ImageView
+                    android:id="@+id/imgD"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/gender_text_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/imgE"
+                    android:background="@drawable/spinner_arrow"
+                    android:entries="@array/Gender"
+                    android:padding="8dp"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:id="@+id/imgE"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/L1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/profileImgId"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/startpage_img"
+
+                    />
+
+                <TextView
+                    android:id="@+id/textImgId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=" Upload Photo"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/done_button_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="6dp"
+                    android:background="#887d9d"
+                    android:gravity="center"
+                    android:shadowRadius="@android:integer/config_mediumAnimTime"
+                    android:text="Submit"
+                    android:textColor="#e8e6eb"
+                    android:typeface="serif" />
+
+                <Button
+                    android:id="@+id/skip_button_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="6dp"
+                    android:layout_toRightOf="@+id/done_button_id"
+                    android:background="#887d9d"
+                    android:shadowRadius="@android:integer/config_mediumAnimTime"
+                    android:text="Skip"
+                    android:textColor="#e8e6eb"
+                    android:typeface="serif" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_dashboard"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.petsapp.android.DashboardActivity">
+
+    <!-- <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">-->
+
+    <ImageView
+        android:id="@+id/articles_img_id"
+        android:layout_width="271dp"
+        android:layout_height="271dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/follow_img_id"
+        android:layout_gravity="right|center_vertical"
+        android:layout_x="501dp"
+        android:layout_y="495dp"
+        android:src="@drawable/happy_paws_icon" />
+
+    <ImageView
+        android:id="@+id/lostfound_img_id"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignBottom="@+id/articles_img_id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="left|center_vertical"
+        android:layout_x="4dp"
+        android:layout_y="461dp"
+        android:src="@drawable/lostfound1" />
+
+    <ImageView
+        android:id="@+id/mate_img_id"
+        android:layout_width="417dp"
+        android:layout_height="417dp"
+        android:layout_x="175dp"
+        android:layout_y="612dp"
+        android:src="@drawable/mate1" />
+
+    <ImageView
+        android:id="@+id/follow_img_id"
+        android:layout_width="262dp"
+        android:layout_height="262dp"
+        android:layout_above="@+id/mate_img_id"
+        android:layout_gravity="right|top"
+        android:layout_toEndOf="@+id/adoption_img_id"
+        android:layout_toRightOf="@+id/adoption_img_id"
+        android:layout_x="345dp"
+        android:layout_y="359dp"
+        android:src="@drawable/follow1" />
+
+    <ImageView
+        android:id="@+id/adoption_img_id"
+        android:layout_width="267dp"
+        android:layout_height="288dp"
+        android:layout_above="@+id/mate_img_id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="left|top"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="45dp"
+        android:layout_x="150dp"
+        android:layout_y="340dp"
+        android:src="@drawable/adoption1" />
+
+    <!-- </RelativeLayout>-->
+</AbsoluteLayout>
