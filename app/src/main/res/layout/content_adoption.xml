@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/adoptgreenback"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.petsapp.android.AdoptionActivity"
+    tools:showIn="@layout/activity_adoption">
+
+    <!-- <ImageView
+         android:id="@+id/imageView1"
+         android:layout_width="30dp"
+         android:layout_height="30dp"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentStart="true"
+         android:layout_alignParentTop="true"
+         android:background="@drawable/ic_arrow_back_white_18dp" />-->
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/back_icon" />
+
+    <!-- <ImageView
+         android:layout_width="40dp"
+         android:layout_height="40dp"
+         android:background="@drawable/search_icon"
+         android:layout_centerVertical="true"
+         android:layout_alignParentRight="true"
+         />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/placeAdoptionId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/surfmate"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:src="@drawable/placeforadoption" />
+
+
+        <ImageButton
+            android:id="@+id/adoptionId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:src="@drawable/adopt" />
+    </LinearLayout>
+
+</RelativeLayout>

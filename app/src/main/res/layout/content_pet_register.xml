@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.petsapp.android.PetRegisterActivity"
+    tools:showIn="@layout/activity_pet_register">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:padding="4dp">
+
+
+            <!-- <TextView
+                 android:id="@+id/reg"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentTop="true"
+                 android:padding="5dp"
+                 android:text="Registration Form"
+                 android:textAppearance="?android:attr/textAppearanceSmall"
+                 android:textSize="20sp"
+                 android:textStyle="bold" />-->
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relat"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/petname_text_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/imgN"
+                    android:background="@drawable/round_corner"
+                    android:hint="Pet Name "
+                    android:padding="7dp"
+                    android:singleLine="true"
+                    android:textColorHint="#262626" />
+
+                <ImageView
+                    android:id="@+id/imgN"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_star_black_24dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/dogcat_spinnerId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/imgC"
+                    android:background="@drawable/spinner_arrow"
+                    android:entries="@array/Petcatagory"
+                    android:padding="8dp"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:id="@+id/imgC"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_star_black_24dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/breed_spinnerId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/img"
+                    android:background="@drawable/round_corner"
+                    android:ems="10"
+                    android:hint="Breed "
+                    android:padding="8dp"
+                    android:popupBackground="#000000"
+                    android:singleLine="true"
+                    android:textColorHint="#262626"></AutoCompleteTextView>
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_star_black_24dp" />
+            </RelativeLayout>
+            <!--<Spinner
+                android:id="@+id/breed_spinnerId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/spinner_arrow"
+                android:entries="@array/Breed"
+                android:padding="8dp" />-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/gender_text_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/imgG"
+                    android:background="@drawable/spinner_arrow"
+                    android:entries="@array/Gender"
+                    android:padding="8dp" />
+
+                <ImageView
+                    android:id="@+id/imgG"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_star_black_24dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/age_text_id"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/round_corner"
+                    android:hint="Age(Years)"
+                    android:inputType="number"
+                    android:padding="7dp"
+                    android:singleLine="true"
+                    android:textColorHint="#262626" />
+
+                <TextView
+                    android:id="@+id/txtAnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/age_text_id"
+                    android:padding="7dp"
+                    android:text="and"
+                    android:textColorHint="#262626" />
+
+                <EditText
+                    android:id="@+id/ageMonth_text_id"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/imgA"
+                    android:layout_toRightOf="@+id/txtAnd"
+                    android:background="@drawable/round_corner"
+                    android:hint="Age(Months)"
+                    android:inputType="number"
+                    android:padding="7dp"
+                    android:singleLine="true"
+                    android:textColorHint="#262626" />
+
+                <ImageView
+                    android:id="@+id/imgA"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/weight_text_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/imgW"
+                    android:background="@drawable/round_corner"
+                    android:hint="Weight"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:padding="7dp"
+                    android:singleLine="true"
+                    android:textColorHint="#262626" />
+
+                <ImageView
+                    android:id="@+id/imgW"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+            <!--<Spinner
+                android:id="@+id/height_spinnerId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/spinner_arrow"
+                android:entries="@array/heigt"
+                android:padding="8dp" />-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/height_spinnerId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/imgH"
+                    android:background="@drawable/round_corner"
+                    android:hint="Height"
+                    android:inputType="number"
+                    android:padding="7dp"
+                    android:singleLine="true"
+                    android:textColorHint="#262626" />
+
+                <ImageView
+                    android:id="@+id/imgH"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/size_spinnerId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/imgS"
+                    android:background="@drawable/spinner_arrow"
+                    android:entries="@array/size"
+                    android:hint="Size"
+                    android:padding="8dp" />
+
+                <ImageView
+                    android:id="@+id/imgS"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/imgAb"
+                    android:background="@drawable/round_corner">
+
+                    <TextView
+                        android:id="@+id/vaccin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Primary Vaccinations"
+                        android:textColor="#262626"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/vacci_radiogrp_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vaccin"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/vacci_yes_radio_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/vaccin"
+                            android:text="Yes" />
+
+                        <RadioButton
+                            android:id="@+id/vacci_no_radio_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/vaccin"
+                            android:layout_toRightOf="@+id/checkBox1"
+                            android:text="No" />
+                    </RadioGroup>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/imgAb"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_star_black_24dp" />
+            </RelativeLayout>
+
+            <!--<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_corner">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cross Breed Requests "
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/breed_radiogrp_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/breed_yes_radio_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text1"
+                        android:text="YES" />
+
+                    <RadioButton
+                        android:id="@+id/breed_no_radio_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text1"
+                        android:layout_toRightOf="@+id/checkBox3"
+                        android:text="No" />
+                </RadioGroup>
+            </RelativeLayout>-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/about_text_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/imgAbc"
+                    android:background="@drawable/round_corner"
+                    android:hint="Description (if your pet is less than one year please specify here)"
+                    android:inputType="textMultiLine"
+                    android:padding="7dp"
+                    android:textColorHint="#262626" />
+
+                <ImageView
+                    android:id="@+id/imgAbc"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/L1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!-- <ImageView
+                     android:id="@+id/profileImgId"
+                     android:layout_width="120dp"
+                     android:layout_height="120dp"
+                     android:src="@drawable/addpet2" />-->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImgId"
+                    android:layout_width="130dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/addpet2"
+                    app:civ_border_color="#ffffff"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/textImgId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=" Upload Photo"
+                    android:textColor="#262626"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/done_button_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/profileImgId"
+                android:background="@drawable/buttoncolorcorner"
+                android:shadowRadius="@android:integer/config_mediumAnimTime"
+                android:text="Done"
+                android:textColor="#FFFFFF" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

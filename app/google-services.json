@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "533148612819",
+    "firebase_url": "https://petsapp-145700.firebaseio.com",
+    "project_id": "petsapp-145700",
+    "storage_bucket": "petsapp-145700.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533148612819:android:5ee05f41a026ea84",
+        "android_client_info": {
+          "package_name": "com.petsapp.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533148612819-deuo5n6scpijipufald4755do036q6ld.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB28ZjEDbddiKKRn3wnQtTX67cWLo7Gqi4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

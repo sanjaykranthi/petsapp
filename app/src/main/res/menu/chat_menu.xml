@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_chat"
+        android:actionLayout="@layout/feed_update_count"
+        android:icon="@drawable/chat_bubble"
+        android:orderInCategory="100"
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_twitter"
+        android:icon="@drawable/twitter_img"
+        android:orderInCategory="100"
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_fb"
+        android:icon="@drawable/facebook_img"
+        android:orderInCategory="100"
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_insta"
+        android:icon="@drawable/instagram_icon"
+        android:orderInCategory="100"
+        android:title=""
+        app:showAsAction="always" />
+</menu>

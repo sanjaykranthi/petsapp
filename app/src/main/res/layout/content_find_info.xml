@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_find_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.petsapp.android.FindInfoActivity"
+    tools:showIn="@layout/activity_find_info">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/lifestyle"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="6dp"
+                android:background="@drawable/lifestyle" />
+
+            <ImageView
+                android:id="@+id/health"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_margin="6dp"
+                android:layout_toRightOf="@+id/lifestyle"
+                android:background="@drawable/health_wellness" />
+
+            <ImageView
+                android:id="@+id/adoptionInfo"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_below="@+id/lifestyle"
+                android:layout_margin="6dp"
+                android:background="@drawable/adoption_info" />
+
+            <ImageView
+                android:id="@+id/catCare"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_below="@+id/health"
+                android:layout_margin="6dp"
+                android:layout_toRightOf="@id/adoptionInfo"
+                android:background="@drawable/cat_care" />
+
+            <ImageView
+                android:id="@+id/trending"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_below="@+id/adoptionInfo"
+                android:layout_margin="6dp"
+                android:background="@drawable/trending" />
+
+            <ImageView
+                android:id="@+id/everything"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_below="@+id/catCare"
+                android:layout_margin="6dp"
+                android:layout_toRightOf="@id/trending"
+                android:background="@drawable/everything" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_pet_profile"
+            android:title="Pet Profile" />
+
+        <item
+            android:id="@+id/nav_help"
+            android:title="Help" />
+        <item
+            android:id="@+id/nav_rating"
+            android:title="Rating" />
+        <item
+            android:id="@+id/nav_share"
+            android:title="Share App" />
+        <item
+            android:id="@+id/nav_signout"
+            android:title="Sign out" />
+    </group>
+</menu>

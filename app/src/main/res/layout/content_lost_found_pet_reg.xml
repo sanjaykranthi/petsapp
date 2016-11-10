@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.petsapp.android.LostFoundPetRegActivity"
+    tools:showIn="@layout/activity_lost_found_pet_reg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/lostorfound_spinner_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/imgD"
+                    android:background="@drawable/spinner_arrow"
+                    android:entries="@array/Gender"
+                    android:padding="8dp" />
+
+                <ImageView
+                    android:id="@+id/imgD"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+            <!--For Lost-->
+            <LinearLayout
+                android:id="@+id/layout_lost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/dogcat_spinnerId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_toLeftOf="@+id/imgC"
+                        android:background="@drawable/spinner_arrow"
+                        android:entries="@array/Petcatagory"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:spinnerMode="dropdown" />
+
+                    <ImageView
+                        android:id="@+id/imgC"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_star_black_24dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/pname_text_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_toLeftOf="@+id/imgN"
+                        android:background="@drawable/round_corner"
+                        android:hint="Pet Name"
+                        android:padding="7dp"
+                        android:singleLine="true"
+                        android:textColorHint="#262626" />
+
+                    <ImageView
+                        android:id="@+id/imgN"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_star_black_24dp"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/breed_spinnerId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_toLeftOf="@+id/imgAuto"
+                        android:background="@drawable/round_corner"
+                        android:ems="10"
+                        android:hint="Breed"
+                        android:padding="8dp"
+                        android:popupBackground="#000000"
+                        android:textColorHint="#262626"></AutoCompleteTextView>
+
+                    <ImageView
+                        android:id="@+id/imgAuto"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_star_black_24dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/gender_spinner_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_toLeftOf="@+id/imgG"
+                        android:background="@drawable/spinner_arrow"
+                        android:entries="@array/Gender"
+                        android:padding="8dp" />
+
+                    <ImageView
+                        android:id="@+id/imgG"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_star_black_24dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/phone_text_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_toLeftOf="@+id/imgPh"
+                        android:background="@drawable/round_corner"
+                        android:hint="Phone no."
+                        android:inputType="number"
+                        android:padding="7dp"
+                        android:phoneNumber="true"
+                        android:singleLine="true"
+                        android:textColorHint="#262626" />
+
+                    <ImageView
+                        android:id="@+id/imgPh"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_star_black_24dp"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/age_text_id"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_corner"
+                        android:hint="Age(Years)"
+                        android:inputType="number"
+                        android:padding="7dp"
+                        android:singleLine="true"
+                        android:textColorHint="#262626" />
+
+                    <TextView
+                        android:id="@+id/txtAnd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@+id/age_text_id"
+                        android:padding="7dp"
+                        android:text="and"
+                        android:textColorHint="#262626" />
+
+                    <EditText
+                        android:id="@+id/ageMonth_text_id"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_toLeftOf="@+id/imgA"
+                        android:layout_toRightOf="@+id/txtAnd"
+                        android:background="@drawable/round_corner"
+                        android:hint="Age(Months)"
+                        android:inputType="number"
+                        android:padding="7dp"
+                        android:singleLine="true"
+                        android:textColorHint="#262626" />
+
+                    <ImageView
+                        android:id="@+id/imgA"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_star_black_24dp"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/color_text_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_toLeftOf="@+id/imgClr"
+                        android:background="@drawable/round_corner"
+                        android:hint="Color"
+                        android:padding="7dp"
+                        android:singleLine="true"
+                        android:textColorHint="#262626" />
+
+                    <ImageView
+                        android:id="@+id/imgClr"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_star_black_24dp"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <!--<EditText
+                    android:id="@+id/date_text_Id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/round_corner"
+                    android:drawableRight="@drawable/ic_date_range_black_24dp"
+                    android:hint="Date Lost *"
+                    android:inputType="number"
+                    android:padding="7dp"
+                    android:singleLine="true" />-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/street_text_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_toLeftOf="@+id/imgstretSeen"
+                        android:background="@drawable/round_corner"
+                        android:hint="Street"
+                        android:inputType="textMultiLine"
+                        android:padding="7dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/imgstretSeen"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_star_black_24dp"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/area_text_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_toLeftOf="@+id/imgLstSeen"
+                        android:background="@drawable/round_corner"
+                        android:completionThreshold="3"
+                        android:hint="Last Seen At "
+                        android:inputType="textMultiLine"
+                        android:padding="7dp"
+                        android:textColorHint="#262626"></AutoCompleteTextView>
+
+                    <ImageView
+                        android:id="@+id/imgLstSeen"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_star_black_24dp" />
+                </RelativeLayout>
+                <!-- <EditText
+                     android:id="@+id/about_text_id"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentEnd="true"
+                     android:layout_alignParentLeft="true"
+                     android:layout_alignParentRight="true"
+                     android:layout_alignParentStart="true"
+                     android:layout_marginTop="8dp"
+                     android:background="@drawable/round_corner"
+                     android:hint="About"
+                     android:inputType="textMultiLine"
+                     android:padding="7dp" />-->
+
+                <TextView
+                    android:id="@+id/txtlat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txtlon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+            <!--End Lost-->
+
+            <!--Start Found -->
+
+            <LinearLayout
+                android:id="@+id/layout_found"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/dogcat_spinnerId_fnd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_toLeftOf="@+id/imgCatgF"
+                        android:background="@drawable/spinner_arrow"
+                        android:entries="@array/Petcatagory"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:spinnerMode="dropdown" />
+
+                    <ImageView
+                        android:id="@+id/imgCatgF"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_star_black_24dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/breed_spinnerFound_Id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_toLeftOf="@+id/imgAuto1"
+                        android:background="@drawable/round_corner"
+                        android:ems="10"
+                        android:hint="Breed"
+                        android:padding="8dp"
+                        android:popupBackground="#000000"
+                        android:textColorHint="#262626"></AutoCompleteTextView>
+
+                    <ImageView
+                        android:id="@+id/imgAuto1"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_star_black_24dp"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/addr_text_id_fnd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_toLeftOf="@+id/imgAddr"
+                        android:background="@drawable/round_corner"
+                        android:completionThreshold="3"
+                        android:hint="Address *"
+                        android:inputType="textMultiLine"
+                        android:padding="7dp"
+                        android:textColorHint="#262626"></AutoCompleteTextView>
+
+                    <ImageView
+                        android:id="@+id/imgAddr"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_star_black_24dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/phone_text_id_fnd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_toLeftOf="@+id/imgPhF"
+                        android:background="@drawable/round_corner"
+                        android:hint="Phone no. *"
+                        android:inputType="number"
+                        android:padding="7dp"
+                        android:phoneNumber="true"
+                        android:singleLine="true"
+                        android:textColorHint="#262626" />
+
+                    <ImageView
+                        android:id="@+id/imgPhF"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_star_black_24dp"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/area_text_id_fnd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_toLeftOf="@+id/imgArea"
+                        android:background="@drawable/round_corner"
+                        android:completionThreshold="3"
+                        android:hint="Area Found At *"
+                        android:inputType="textMultiLine"
+                        android:padding="7dp"
+                        android:textColorHint="#262626"></AutoCompleteTextView>
+
+                    <ImageView
+                        android:id="@+id/imgArea"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_star_black_24dp" />
+                </RelativeLayout>
+                <!-- <EditText
+                     android:id="@+id/about_text_id_fnd"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentEnd="true"
+                     android:layout_alignParentLeft="true"
+                     android:layout_alignParentRight="true"
+                     android:layout_alignParentStart="true"
+                     android:layout_marginTop="8dp"
+                     android:background="@drawable/round_corner"
+                     android:hint="About"
+                     android:inputType="textMultiLine"
+                     android:padding="7dp" />-->
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/date_text_Id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/imgDate"
+                    android:background="@drawable/round_corner"
+                    android:focusableInTouchMode="false"
+                    android:hint="Date Found "
+                    android:inputType="number"
+                    android:padding="7dp"
+                    android:singleLine="true"
+                    android:textColorHint="#262626" />
+
+                <ImageView
+                    android:id="@+id/imgDate"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_star_black_24dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/about_text_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/imgAbt"
+                    android:background="@drawable/round_corner"
+                    android:hint="Description (if your pet is less than one year please specify here)"
+                    android:inputType="textMultiLine"
+                    android:padding="7dp"
+                    android:textColorHint="#262626" />
+
+                <ImageView
+                    android:id="@+id/imgAbt"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/L1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImgId"
+                    android:layout_width="130dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/lostfoundphoto"
+                    app:civ_border_color="#ffffff"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/textImgId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=" Upload Photo"
+                    android:textColor="#262626"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/done_button_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/profileImgId"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/lostfoundbuttoncorner"
+                android:shadowRadius="@android:integer/config_mediumAnimTime"
+                android:text="Done"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

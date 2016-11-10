@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="listcolor">#46438b</color>
+    <color name="mycolor">#46438b</color>
+    <color name="mate_interest">#d23d57</color>
+    <color name="adoption_interest">#2b9a99</color>
+
+    <color name="pink">#d0445d</color>
+    <color name="yellow">#dd8332</color>
+    <color name="green">#2b9a99</color>
+
+
+    <color name="sender">#5353A3</color>
+    <color name="receiver">#777380</color>
+
+</resources>

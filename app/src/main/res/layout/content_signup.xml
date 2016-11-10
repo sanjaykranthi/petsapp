@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newloginbg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.petsapp.android.SignupActivity"
+    tools:showIn="@layout/activity_signup">
+
+    <!-- <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name_text_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/silver_round_corner1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+            android:hint="Name"
+            android:inputType="textCapSentences"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColorHint="#FF4D4C4C"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/phone_text_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_text_id"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/silver_round_corner1"
+            android:hint="Mobile Number"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:phoneNumber="true"
+            android:singleLine="true"
+            android:textColorHint="#FF4D4C4C"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/signup_button_id"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/phone_text_id"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/silver_round_corner1"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:typeface="serif" />
+
+    </RelativeLayout>
+    <!--   </ScrollView>-->
+</ScrollView>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.petsapp.android.PetBookPetRegActivity"
+    tools:showIn="@layout/activity_pet_book_pet_reg">
+
+
+    <!-- <LinearLayout
+         android:id="@+id/l1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/relat"
+         android:orientation="vertical"
+         android:padding="3dp">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+         <EditText
+             android:id="@+id/petname_text_id"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/round_corner"
+             android:hint="Pet Name"
+             android:padding="8dp"
+             android:singleLine="true"
+             android:textColorHint="#262626"
+             android:layout_toLeftOf="@id/imgN"/>
+             <ImageView
+                 android:id="@+id/imgN"
+                 android:layout_width="10dp"
+                 android:layout_height="10dp"
+                 android:layout_alignParentRight="true"
+                 android:layout_centerVertical="true"
+                 android:src="@drawable/ic_star_black_24dp"
+                 />
+         </RelativeLayout>
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+         <EditText
+             android:id="@+id/petdetails_text_id"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:background="@drawable/round_corner"
+             android:hint="Pet Details"
+             android:padding="8dp"
+             android:textColorHint="#262626"
+             android:layout_toLeftOf="@id/imgD"/>
+             <ImageView
+                 android:id="@+id/imgD"
+                 android:layout_width="10dp"
+                 android:layout_height="10dp"
+                 android:layout_alignParentRight="true"
+                 android:layout_centerVertical="true"
+                 android:src="@drawable/ic_star_black_24dp"
+                 />
+         </RelativeLayout>
+
+     </LinearLayout>-->
+
+    <!-- <LinearLayout
+         android:id="@+id/l2"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/l1"
+         android:layout_marginTop="10dp"
+         android:orientation="horizontal">
+
+         <de.hdodenhof.circleimageview.CircleImageView
+             android:id="@+id/upload_img_id"
+             android:layout_width="80dp"
+             android:layout_height="100dp"
+             android:src="@drawable/blue_image" />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:layout_marginLeft="10dp"
+             android:gravity="center_vertical"
+             android:text="Upload Photo"
+             android:textColor="#262626"/>
+
+     </LinearLayout>-->
+
+    <!--<Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l2"
+        android:layout_marginTop="7dp"
+        android:text="Submit"
+        android:background="#4e4b92"/>-->
+
+
+    <!-- <RelativeLayout
+         android:id="@+id/R1"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">-->
+
+    <ImageView
+        android:id="@+id/upload_img_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <!--</RelativeLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#94000000"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/petname_text_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/petdetails_text_id"
+            android:layout_gravity="bottom|end"
+            android:hint="Name"
+            android:singleLine="true"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/petdetails_text_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/submit"
+            android:layout_alignParentBottom="true"
+            android:hint="Add a caption"
+            android:textColor="#ffffff"
+            android:textColorHint="#9b9b9b" />
+    </LinearLayout>
+</RelativeLayout>
